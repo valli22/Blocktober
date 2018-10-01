@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 4900844666120520}
   - component: {fileID: 20768432016339084}
   - component: {fileID: 124348025499129806}
+  - component: {fileID: 114120195901942816}
   m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
@@ -288,7 +289,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1739279139333386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.546, y: 0, z: 0}
+  m_LocalPosition: {x: -2.56, y: 0, z: 0.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4986719497313390}
@@ -782,6 +783,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1716610340909876}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114120195901942816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803850251283952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c0b4e3e170554eb78cd1c054c99fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraScript: {fileID: 114571202114682582}
 --- !u!114 &114190853388511918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -793,6 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330f8250798c4ae45845e7aa423e46ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canTakeDame: 1
   healthBar: {fileID: 0}
 --- !u!114 &114571202114682582
 MonoBehaviour:
@@ -807,6 +821,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookAt: {fileID: 4390804638713286}
   cam: {fileID: 20768432016339084}
+  distance: 3.87
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294966783
 --- !u!114 &114756212944752240
 MonoBehaviour:
   m_ObjectHideFlags: 1
